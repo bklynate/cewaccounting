@@ -21,7 +21,7 @@ $message = strip_tags(htmlspecialchars($_POST['message']));
  $params = array(
       'api_user' => "app56505530@heroku.com",
       'api_key' => "4uuvkshg8717",
-      'to' => "nathanielcfa@gmail.com", // set TO address to have the contact form's email content sent to
+      'to' => "clarence.washington@gmail.com", // set TO address to have the contact form's email content sent to
       'subject' => "cewaccounting.com Contact Form:  $name ($email)", // Either give a subject for each submission, or set to $subject
       'html' => "<html><head><title>Contact Form</title><body>
        Name: $name\n<br>

@@ -19,8 +19,8 @@ $message = strip_tags(htmlspecialchars($_POST['message']));
 // note the above parameters now referenced in the 'phone', 'html', and 'text' sections
 // make the to email be your own address or where ever you would like the contact form info sent
  $params = array(
-      'api_user' => "app56505530@heroku.com",
-      'api_key' => "4uuvkshg8717",
+      'api_user' => "SENDGRID_USERNAME",
+      'api_key' => "SENDGRID_PASSWORD",
       'to' => "clarence.washington@gmail.com", // set TO address to have the contact form's email content sent to
       'subject' => "cewaccounting.com Contact Form:  $name ($email)", // Either give a subject for each submission, or set to $subject
       'html' => "<html><head><title>Contact Form</title><body>

@@ -12,10 +12,10 @@ if(empty($_POST['name'])  		||
 // use actual sendgrid username and password in this section
  $url = 'https://api.sendgrid.com/';
  // grabs HTML form's post data; if you customize the form.html parameters then you will need to reference their new new names here
- $name = $_POST['name'];
- $email = $_POST['email'];
- $phone = $_POST['phone'];
- $message = $_POST['message'];
+$name = strip_tags(htmlspecialchars($_POST['name']));
+$email_address = strip_tags(htmlspecialchars($_POST['email']));
+$phone = strip_tags(htmlspecialchars($_POST['phone']));
+$message = strip_tags(htmlspecialchars($_POST['message']));
 // note the above parameters now referenced in the 'phone', 'html', and 'text' sections
 // make the to email be your own address or where ever you would like the contact form info sent
  $params = array(

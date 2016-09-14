@@ -13,7 +13,7 @@ if(empty($_POST['name'])  		||
  $url = 'https://api.sendgrid.com/';
  // grabs HTML form's post data; if you customize the form.html parameters then you will need to reference their new new names here
 $name = strip_tags(htmlspecialchars($_POST['name']));
-$email_address = strip_tags(htmlspecialchars($_POST['email']));
+$email = strip_tags(htmlspecialchars($_POST['email']));
 $phone = strip_tags(htmlspecialchars($_POST['phone']));
 $message = strip_tags(htmlspecialchars($_POST['message']));
 // note the above parameters now referenced in the 'phone', 'html', and 'text' sections

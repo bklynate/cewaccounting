@@ -11,8 +11,6 @@ if(empty($_POST['name'])  		||
    }
 // use actual sendgrid username and password in this section
  $url = 'https://api.sendgrid.com/';
- $user = process.env.SENDGRID_USERNAME;
- $pass = process.env.SENDGRID_PASSWORD;
  // grabs HTML form's post data; if you customize the form.html parameters then you will need to reference their new new names here
  $name = $_POST['name'];
  $email = $_POST['email'];
@@ -22,7 +20,7 @@ if(empty($_POST['name'])  		||
 // make the to email be your own address or where ever you would like the contact form info sent
  $params = array(
       'api_user' => "app56505530@heroku.com",
-      'api_key' => "tecnujt49051",
+      'api_key' => "4uuvkshg8717",
       'to' => "nathanielcfa@gmail.com", // set TO address to have the contact form's email content sent to
       'subject' => "cewaccounting.com Contact Form:  $name ($email)", // Either give a subject for each submission, or set to $subject
       'html' => "<html><head><title>Contact Form</title><body>

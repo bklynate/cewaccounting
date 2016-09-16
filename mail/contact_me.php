@@ -23,7 +23,7 @@ $key = getenv(SENDGRID_PASSWORD);
  $params = array(
       'api_user' => $user,
       'api_key' => $key,
-      'to' => "clarence.washington@gmail.com", // set TO address to have the contact form's email content sent to
+      'to' => "clarence@cewaccounting.com", // set TO address to have the contact form's email content sent to
       'subject' => "cewaccounting.com Contact Form:  $name ($email)", // Either give a subject for each submission, or set to $subject
       'html' => "<html><head><title>Contact Form</title><body>
        Name: $name\n<br>

@@ -731,10 +731,24 @@ ul.social-buttons li a {
     transition: all .3s
 }
 
+#rss-feed a {
+  text-decoration: none;
+  color: #000;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s
+}
+
+#rss-feed a:hover {
+  text-decoration: none;
+  color: #fed136
+}
+
+
 ul.social-buttons li a:active,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:hover {
-    background-color: #fed136
+    background-color: #fed136;
 }
 
 .btn.active,

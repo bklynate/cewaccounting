@@ -16,8 +16,8 @@ $name = strip_tags(htmlspecialchars($_POST['name']));
 $email = strip_tags(htmlspecialchars($_POST['email']));
 $phone = strip_tags(htmlspecialchars($_POST['phone']));
 $message = strip_tags(htmlspecialchars($_POST['message']));
-$user = getenv("SENDGRID_USERNAME");
-$key = getenv("SENDGRID_PASSWORD");
+$user = getenv(SENDGRID_USERNAME);
+$key = getenv(SENDGRID_PASSWORD);
 // note the above parameters now referenced in the 'phone', 'html', and 'text' sections
 // make the to email be your own address or where ever you would like the contact form info sent
  $params = array(

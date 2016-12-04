@@ -1,9 +1,3 @@
-/*!
- * Start Bootstrap - Agency v3.3.7+1 (http://startbootstrap.com/template-overviews/agency)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
- */
-
 .btn-primary.active,
 .btn-primary:active,
 .btn-xl.active,
@@ -338,6 +332,10 @@ section h3.section-subheading {
 .service-heading {
     margin: 15px 0;
     text-transform: none
+}
+
+#services {
+  background-color: #eee;
 }
 
 #portfolio .portfolio-item {
